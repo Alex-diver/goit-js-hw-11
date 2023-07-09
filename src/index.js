@@ -11,7 +11,7 @@ const loadMoreBtn = document.querySelector('.load-more');
 let nameImages = '';
 let currentPage = 1;
 let totalPage = 0;
-let perPage = 0;
+// let perPage = 0;
 
 export { nameImages, currentPage };
 
@@ -52,7 +52,7 @@ async function onSubmit(evt) {
     totalPage = Math.ceil(
       dataGallery.data.totalHits / dataGallery.data.hits.length
     );
-    perPage = dataGallery.data.hits.length;
+    // perPage = dataGallery.data.hits.length;
 
     if (totalPage > currentPage) {
       loadMoreBtn.hidden = false;
@@ -87,7 +87,7 @@ async function onClickLoadMoreBtn() {
       markupGellery(dataGalleryPagination.data.hits)
     );
     galleryLightBox.refresh();
-    perPage = dataGalleryPagination.data.hits.length;
+    // perPage = dataGalleryPagination.data.hits.length;
   } catch (error) {
     console.error(error);
     galleryItemsEl.innerHTML = '';
