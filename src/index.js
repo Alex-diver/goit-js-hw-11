@@ -7,7 +7,7 @@ import { markupGellery } from './markup';
 const formEl = document.querySelector('#search-form');
 const inputEl = document.querySelector('#search-form input');
 const galleryItemsEl = document.querySelector('.gallery');
-const loadMoreBtn = document.querySelector('.load-more');
+const loadMoreBtn = document.querySelector('.load-more-btn');
 let nameImages = '';
 let currentPage = 1;
 let totalPage = 0;
